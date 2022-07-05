@@ -9,23 +9,23 @@ For ease of use I prefer to pre-load these functions in my PowerShell profile an
 
 ## Usage
 
-### Enable-AzureMFA -UPN <UPN>
+### Enable-AzureMFA -UPN $UPN
 This will retrieve the user account and set the State for StrongAuthenticationRequirements to "Enabled".
 
-### Disable-AzureMFA -UPN <UPN>
+### Disable-AzureMFA -UPN $UPN
 This will retrieve the user account and set the state for StrongAuthenticationRequirements to "Disabled".
 
-### Check-AzureMFA -UPN <UPN>
+### Check-AzureMFA -UPN $UPN
 This will retrieve the user account and report the current value of StrongAuthenticationRequirements.
 
-### Show-AzureMFA -UPN <UPN>
+### Show-AzureMFA -UPN $UPN
 This will retrieve the user account and return a summary of the account MFA status, including:
  * Default MFA method
  * Primary phone number
  * Alternative phone number
  * All available MFA methods
 
-### Rereg-AzureMFA -UPN <UPN>
+### Rereg-AzureMFA -UPN $UPN
 This will reset the StrongAuthenticationMethods for the account to null. This will allow the user to re-enrol for MFA.
 
 ### MFATool
